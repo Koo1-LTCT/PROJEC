@@ -249,6 +249,7 @@ public class Debug_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         double Input1 = Double.parseDouble(Input_variableA.getText());
         double Input2 = Double.parseDouble(Input_variableB.getText());
+        double Input3 = Double.parseDouble(input3_variable.getText());
         double Minus = 0;
         Minus = Input1-Input2;
         ketqua.setText(Minus+ " ");
