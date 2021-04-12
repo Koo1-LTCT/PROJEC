@@ -39,6 +39,8 @@ public class Debug_1 extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         Input_variableA = new javax.swing.JTextField();
         Input_variableB = new javax.swing.JTextField();
+        input3_variable = new javax.swing.JTextField();
+        input3 = new javax.swing.JLabel();
         ketqua = new javax.swing.JTextField();
         Title = new javax.swing.JLabel();
         ButtomResult = new javax.swing.JButton();
@@ -140,17 +142,28 @@ public class Debug_1 extends javax.swing.JFrame {
             }
         });
 
+        input3_variable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                input3_variableActionPerformed(evt);
+            }
+        });
+
+        input3.setText("Input3");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(input3))
                 .addGap(46, 46, 46)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(input3_variable)
                     .addComponent(Input_variableA)
                     .addComponent(Input_variableB, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE))
                 .addContainerGap(63, Short.MAX_VALUE))
@@ -166,7 +179,11 @@ public class Debug_1 extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Input_variableB, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(input3_variable, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(input3))
+                .addGap(46, 46, 46))
         );
 
         Title.setBackground(new java.awt.Color(102, 102, 255));
@@ -222,8 +239,9 @@ public class Debug_1 extends javax.swing.JFrame {
     private void Button_SumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_SumActionPerformed
         double Input1 = Double.parseDouble(Input_variableA.getText());
         double Input2 = Double.parseDouble(Input_variableB.getText());
+        double Input3 = Double.parseDouble(input3_variable.getText());
         double Sum = 0;
-        Sum = Input1+Input1;
+        Sum = Input2+Input1+Input3;
         ketqua.setText(Sum+ " ");
     }//GEN-LAST:event_Button_SumActionPerformed
 
@@ -300,6 +318,12 @@ public class Debug_1 extends javax.swing.JFrame {
         ketqua.setText(Permutation + " ");
     }//GEN-LAST:event_Buttom_PermutationActionPerformed
 
+    private void input3_variableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input3_variableActionPerformed
+        // TODO add your handling code here:
+        
+   
+    }//GEN-LAST:event_input3_variableActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -347,6 +371,8 @@ public class Debug_1 extends javax.swing.JFrame {
     private javax.swing.JTextField Input_variableA;
     private javax.swing.JTextField Input_variableB;
     private javax.swing.JLabel Title;
+    private javax.swing.JLabel input3;
+    private javax.swing.JTextField input3_variable;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
